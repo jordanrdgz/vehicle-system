@@ -5,6 +5,7 @@
 * Used [Laminas](https://getlaminas.org/) Framework. to use the routing and the db adapter.
 * Bootstrap to quickly apply some styles.
 * No javascript framework was used only vanilla javascript
+* A very basic JWT kind of token is used to validate the access to API endpoints. 
 
 ## Installation using Composer
 
@@ -89,3 +90,7 @@ INSERT INTO `vehicles`.`user` (`email`,`password`) VALUES ('test@test.com', MD5(
 ## Test user
 * Email: test@test.com
 * Password: 123456
+
+## Endpoints
+All the endpoints in the collection need an access_token that is generated 
+when executing the login endpoint.
