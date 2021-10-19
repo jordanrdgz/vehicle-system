@@ -43,6 +43,11 @@ Js
 vehicle-system/public/js/all.js
 ```
 
+Postman collection
+```bash
+vehicle-system/Gila Vehicle System.postman_collection.json
+```
+
 ## Database Setup
 ```bash
 CREATE SCHEMA `vehicles` DEFAULT CHARACTER SET utf8 ;
