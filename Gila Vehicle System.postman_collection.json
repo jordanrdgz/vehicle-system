@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "3f241fa8-23ed-4054-a7ea-ce0d4ea70a22",
+		"name": "Gila Vehicle System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/application/login",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"application",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "MSN0ZXN0QHRlc3QuY29tIzIwMjEtMTEtMTkgMTQ6NTQ6MjA=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/application/logout",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"application",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "MSN0ZXN0QHRlc3QuY29tIzIwMjEtMTEtMTkgMTI6MDQ6NTk=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sub_type",
+							"value": "Subcompact",
+							"type": "text"
+						},
+						{
+							"key": "horsepower",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "total_tires",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_type",
+							"value": "sedan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/api/vehicles/add",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all vehicles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "MSN0ZXN0QHRlc3QuY29tIzIwMjEtMTEtMTkgMTQ6NTQ6MjA=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8080/api/vehicles?vehicle_type=sedan",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles"
+					],
+					"query": [
+						{
+							"key": "vehicle_type",
+							"value": "sedan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all vehicles types",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "MSN0ZXN0QHRlc3QuY29tIzIwMjEtMTEtMTggMTc6NDU6MzM=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8080/api/vehicles?vehicle_type=sedan",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles"
+					],
+					"query": [
+						{
+							"key": "vehicle_type",
+							"value": "sedan"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

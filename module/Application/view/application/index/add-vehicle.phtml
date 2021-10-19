@@ -1,0 +1,37 @@
+<h1>Add Vehicles</h1>
+<div class="card">
+    <div class="card-body">
+        <form id="add-vehicle-form">
+            <div class="form-group">
+                <label for="vehicle-type">Vehicle Type</label>
+                <select name="vehicle_type" class="form-control" id="vehicle-type">
+                    <option value="">Select Vehicle Type</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="motorcycle">Motorcycle</option>
+                </select>
+            </div>
+            <div class="form-group" style="display: none">
+                <label for="sub-type">Type</label>
+                <select class="form-control" name="sub_type" id="sub-type">
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="horsepower">Horsepower</label>
+                <input required type="text" class="form-control" name="horsepower" id="horsepower" placeholder="200">
+            </div>
+            <div class="form-group">
+                <label for="total-tires">Total tires</label>
+                <input required type="text" class="form-control" name="total_tires" id="total-tires" placeholder="4">
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <input required type="text" class="form-control" name="model" id="model" placeholder="ASDF45">
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label>
+                <input required type="text" class="form-control" name="color" id="color" placeholder="Red">
+            </div>
+            <button type="submit" id="save-vehicle" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</div>
