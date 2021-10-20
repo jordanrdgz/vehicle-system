@@ -51,6 +51,7 @@ vehicle-system/Gila Vehicle System.postman_collection.json
 
 ## Database Setup
 The database config will try to connect to a localhost server under user: root and password: 12345
+
 Database config is located at
 ```bash
 vehicle-system/config/autoload/database.global.php
